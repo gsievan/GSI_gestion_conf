@@ -1,48 +1,47 @@
-/* FEUILLE DE STYLES POUR TOUS LES STYLES DE L'APPLICATION 
-(Remarque : à plusieurs reprises, l'attribut color:blue est précisé bien qu'il 
-ne soit pas utile ; ceci permet une validation du W3C sans avertissement. 
-Idem pour background-color) */
 
-/* Style de base pour la page (couleur fond : ocre, couleur texte : noir) */
+
+/* Style de base pour la page*/
 html{
   font:11px Arial, Helvetica, sans-serif;
-  color:blue;
+  color: #555;
 }
 
 .body 
 {
   background-color:#FFF;
-  color:blue;
-  font:11px Arial, Helvetica, sans-serif;
 }
-.basePage 
-{
-   font:11px Arial, Helvetica, sans-serif;
-}
-/* Style pour le titre (couleur du texte : rouge) */
+
+/* Style pour les titre */
 h1, h2
 {
   background-color:orange;
-  font:30px Arial, Helvetica, sans-serif;
+  font-size:30px ;
   text-align:center;
 } 
 h2
 {
-  font:20px Arial, Helvetica, sans-serif;
+  font-size:20px ;
 }
 h5
 {
-  font:14px Arial, Helvetica, sans-serif;
+  font-size:14px ;
 }
-a {
-font-family:Arial, Helvetica, sans-serif
+p a {
+	text-decoration: none;
+	border-bottom: 1px dashed #000;
+}
+p a:hover {
+	border-bottom: none;
 }
 
 /* Style pour le texte de la page d'accueil (couleur : bleu foncé avec mise en
 gras et en italique) */
-.texteAccueil
+#corps
 {
-   font:14px Arial, Helvetica, sans-serif;
+   font-size:14px;
+   margin-left: 180px;
+   padding: 10px;
+   border: 1px solid #777;
 }
 
 /* STYLES POUR LE MENU ET LE CENTRE */
@@ -53,40 +52,31 @@ gras et en italique) */
 float: left; 
 top:expression(documentElement.scrollTop+body.scrollTop);
 width: 160px;
-margin-top:10px;
-border-color:blue;
 border-bottom:1px solid #777777;
 border-right:1px solid #777777;
 border-left:10px solid #777777;
 border-top:1px solid #777777;
 text-align:left;
 }
-.centre {
-	position: absolute;
-	Margin-left: 180px;
-	font-weight:normal;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 10px;
-  	color:blue;
-}
+
 .menugauche {
 list-style-type: none;
 margin: 1px 1px 0px 1px;
-padding:1px 10px 10px 5px ;
-font:12px Arial, Helvetica, sans-serif;
-color:blue;
+padding:1px 10px 1px 5px ;
+font-size:12px ;
 }
-.menugauche li {
-color:blue;
+
+.menugauche li a{
+	display: block;
+	background-color : #ccc;
+	margin-bottom: 3px;
+	color: #000;
+	text-decoration: none;
 }
-.menugauche a {
-margin: 2px ;
-color:blue;
-text-decoration: underline;
+.menugauche li a:hover{
+	background-color: #555;
 }
-.menugauche a:hover {
-text-decoration: none;
-}
+
 /* STYLES POUR LES TABLEAUX QUADRILLÉS */
 
 /* Style des tableaux avec quadrillage : épaisseur du quadrillage 1px, 
@@ -98,24 +88,22 @@ table.tabQuadrille td
    border-left:1px solid #777777;
    border-top:1px #777777;
    padding-left:3px;
-	font-family: Arial, Helvetica, sans-serif;
 	font-size: 10px;
 } 
 
 /* Style pour la 1ère ligne d'en-tête des tableaux quadrillés : fond avec 
 nuances de jaune et texte centré */
-tr.enTeteTabQuad
+table.tabQuadrille tr th
 {
    background-image:url('../images/xpBarre.jpg');
    height:21px;
    text-align:center;
-	font-family: Arial, Helvetica, sans-serif;
 	font-size: 10px;
 } 
 
 /* Style pour les lignes (autres que la 1ère ligne d'en-tête) des tableaux 
 quadrillés : fond écru et texte centré */
-tr.ligneTabQuad 
+table.tabQuadrille tr
 {
    background-color:#FFFFE0;
    text-align:center;
@@ -124,43 +112,33 @@ tr.ligneTabQuad
 
 /* STYLES POUR LES TABLEAUX NON QUADRILLÉS */
 
-/* Style des tableaux sans quadrillage : fond écru, épaisseur de la bordure 
-1px */
 table.tabNonQuadrille 
 {
-   background-color:#FFFFE0;
    border-bottom:1px solid #777777;
    border-right:1px solid #777777;
    border-left:1px solid #777777;
-   border-top:1px #777777;
-   color:blue;
+   border-top:1px solid #777777;
+   position: center;
 }
  
-/* Style pour la ligne d'en-tête des tableaux non quadrillés : fond avec 
-nuances de jaune, texte centré et en gras et trait bas pour séparer l'en-tête du 
-corps du tableau */
-tr.enTeteTabNonQuad td
+table.tabNonQuadrille tr th
 {
-   background-image:url('../images/xpBarre.jpg');
-   height:21px;
-   text-align:center;
-   font-weight:bold;
-   border-bottom:1px solid #777777;
-   	font-family: Arial, Helvetica, sans-serif;
+	height:21px;
+	text-align:left;
+	font-weight:bold;
 	font-size: 14px;
-
+	border-bottom: 2px solid #777;
 } 
 
-/* Style pour les lignes (autres que la 1ère ligne d'en-tête) des tableaux non 
-quadrillés : fond écru, hauteur plus importante, texte aligné à gauche et 
-espacement de 3px entre la bordure gauche de chaque cellule et le texte */
-tr.ligneTabNonQuad td
+table.tabNonQuadrille tr td
 {
-   background-color:#FFFFE0;
-   height:28px;
-   text-align:left;
-   padding-left:3px;
-   color:blue;
-	font-family: Arial, Helvetica, sans-serif;
+	height:28px;
+	text-align:left;
+	padding-left:3px;
 	font-size: 10px;
 } 
+
+/* Styles persos */
+.hide {
+	display: none;
+}

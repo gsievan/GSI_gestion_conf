@@ -11,9 +11,10 @@ echo '
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link href="css/cssGeneral.css" rel="stylesheet" type="text/css">
 </head>
-<body class="basePage">
+<body>
 
 <!--  En-tête -->
+<h1 class="hide">Journées Portes Ouvertes</h1>
 <img src="images/logo.png"	alt="Jeune Chambre Economique" title="JCE : Jeune Chambre Economique"/>
 <img src="images/bandeau.png"	alt="Jeune Chambre Economique" title="JCE : Jeune Chambre Economique"/>
 
@@ -21,10 +22,14 @@ echo '
 <br/>
 <div class="gauche">
 	<ul class="menugauche">
-		<li><a href="index.php">Accueil JPE 2008</a></li>
+		<li><a href="index.php">Accueil JPE</a></li>
 		<li><a href="listeVisitesPourDetail.php">Gestion des visites</a></li>
-		<li><a href="listeVisitesPourInscription.php">Inscription visite</a></li>
-		<li><a href="etatInscriptions.php">Edition des listes des inscrits</a></li>
+		<li><a href="listeVisitesPourInscription.php">Inscription à une visite</a></li>
+		<li><a href="etatInscriptions.php">Edition des listes des inscrits (PDF)</a></li>
+		<li><a href="#">Voir les conférences</a></li>
+		<li><a href="#">Inscription à une conférence</a></li>
+		<li><a href="#">Voir les entreprises</a></li>
+		<li><a href="#">Créer une conférence</a></li>
 	</ul>
-</div>';
-?>
+</div>
+ '; ?>

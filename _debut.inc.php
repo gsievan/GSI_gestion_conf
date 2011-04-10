@@ -18,7 +18,4 @@ if (!selectBase($connexion))
    afficherErreurs();
    exit();
 }
-
-
-
 ?>

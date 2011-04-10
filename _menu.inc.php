@@ -14,9 +14,7 @@ echo '
 <body>
 
 <!--  En-tête -->
-<h1 class="hide">Journées Portes Ouvertes</h1>
-<img src="images/logo.png"	alt="Jeune Chambre Economique" title="JCE : Jeune Chambre Economique"/>
-<img src="images/bandeau.png"	alt="Jeune Chambre Economique" title="JCE : Jeune Chambre Economique"/>
+<h1><a href="index.php">Journées Portes Ouvertes</a></h1>
 
 <!--  Menu gauche-->
 <br/>
@@ -24,12 +22,12 @@ echo '
 	<ul class="menugauche">
 		<li><a href="index.php">Accueil JPE</a></li>
 		<li><a href="listeVisitesPourDetail.php">Gestion des visites</a></li>
-		<li><a href="listeVisitesPourInscription.php">Inscription à une visite</a></li>
+		<li><a href="listeVisitesPourInscription.php">Inscription a une visite</a></li>
 		<li><a href="etatInscriptions.php">Edition des listes des inscrits (PDF)</a></li>
-		<li><a href="#">Voir les conférences</a></li>
-		<li><a href="#">Inscription à une conférence</a></li>
+		<li><a href="#">Voir les conferences</a></li>
+		<li><a href="#">Inscription a une conference</a></li>
 		<li><a href="#">Voir les entreprises</a></li>
-		<li><a href="#">Créer une conférence</a></li>
+		<li><a href="#">Creer une conference</a></li>
 	</ul>
 </div>
  '; ?>

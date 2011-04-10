@@ -3,9 +3,9 @@
 include  "_debut.inc.php" ;
 echo "
 <div id='corps'>
-	<p>
+	
 		<h2>Page d'index</h2>
-         Cette application web permet de gérer les inscriptions des visiteurs
+         <p>Cette application web permet de gérer les inscriptions des visiteurs
          durant les journées du patrimoine économique.
 
           Elle offre les services suivants :
